@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestione Dipendenti</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <!--Javascript-->
+    <script src="./js/JQuery.js"></script>
+    <script src="./js/manageEmployee.js"></script>
+
+</head>
+<body>
+    <h2>Lista Dipenenti</h2>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th class="title">ID</th>
+                <th class="title">NOME</th>
+                <th class="title">COGNOME</th>
+                <th class="title">SESSO</th>
+                <!--<th class="title">DATA ASSUNZIONE</th>-->
+                <th class="title">AZIONI</th>
+              </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">
+                     <!-- Trigger/Open The Modal -->
+                    <button class="addButton" id="myBtn">Aggiungi Dipendenti</button>
+
+                    <!-- The Modal -->  
+                    <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Aggiungi Dipendenti</h2>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="*nome" class="textBox" id="firstName">
+                        <input type="text" placeholder="*cognome" class="textBox" id="lastName">
+                        <!--<input type="text" placeholder="*genere" id="gender">--><br>
+                        <label for="gender">Genere:</label>
+                        <select id="gender">
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select><br>
+                    <!--
+                        <label for="year">Anno: </label>
+                        <input type="number" id="year" min="1978" max="5050">
+                        <label for="month">Mese: </label>
+                        <input type="number" id="month" min="1" max="12">
+                        <label for="day">Giorno: </label>
+                        <input type="number" id="day" min="1" max="31">
+                    -->
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" value="Aggiungi" class="addButton" id="btnAdd">
+                    </div>
+                    </div>
+                    </div>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <script src="./js/modal.js">//javascript for modal button</script>
+</body>
+
+</html>
